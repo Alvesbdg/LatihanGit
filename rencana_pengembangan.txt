@@ -1,0 +1,7 @@
+Pencana Pengembangan Proyek:
+
+1. Implementasi fitur autentikasi pengguna.
+2. Integrasi API pihak ketiga untuk data real-time.
+3. Penambahan fitur notifikasi push.
+4. Optimasi kinerja dan skalabilitas.
+5. Desain ulang UI/UX berdasarkan feedback pengguna.
