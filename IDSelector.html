@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contoh id Selector</title>
+    <style> 
+/*        Menerapkan gaya pada elemen dengan ID tertentu:*/
+ #header {
+            background-color: blue;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+
+/*        Menggunakan ID Selector untuk elemen lain:*/
+    #main-content {
+            margin: 20px;
+            padding: 20px;
+            background-color: #f0f0f0;
+        }
+
+/*Menggabungkan ID Selector dengan Type Selector:*/
+p#special-paragraph {
+            color: green;
+            font-size: 18px;
+        }
+
+/*Menggunakan ID Selector dengan elemen form:*/
+ #login-form {
+            border: 1px solid #ccc;
+            padding: 20px;
+            width: 300px;
+        }
+
+    </style>
+</head>
+<body>
+   <div id="header">Ini adalah header</div>
+    
+    <div id="main-content">
+        <p>Ini adalah konten utama.</p>
+        <p>Konten utama dapat berisi banyak elemen lain.</p>
+
+    </div>
+     <p id="special-paragraph">Ini adalah paragraf spesial dengan teks hijau.</p>
+
+
+<form id="login-form">
+        <label for="username">Username:</label><br>
+        <input type="text" id="username" name="username"><br>
+        <label for="password">Password:</label><br>
+        <input type="password" id="password" name="password"><br><br>
+        <input type="submit" value="Login">
+    </form>
+    
+</body>
+</html>

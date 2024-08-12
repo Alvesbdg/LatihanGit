@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contoh class Selector</title>
+    <style> 
+
+        /* <a> element yang menerapkan href attribut */
+          a[href] {
+              color: blue;
+          }
+   
+         /* <a> element yang menerapkan nilai pada href dengan awalan "#" */
+         a[href^="#"] {
+            background-color: gold;
+        }
+   
+        /* <a> element yang menerapkan nilai pada href yang mengandung teks "example" */
+         a[href*="example"] {
+            background-color: silver;
+       }
+  
+       /* <a> element yang menerapkan nilai pada href yang mengandung teks "insensitive" tidak mementingkan huruf kapital*/
+        a[href*="insensitive" i] {
+            color: cyan;
+       }
+  
+         /* <a> element yang menerapkan nilai pada href dengan akhiran ".org" */
+         a[href$=".org"] {
+             color: red;
+       }
+
+
+
+/* [attribute]*/
+[title] {
+    color: blue;
+}
+
+/*[attribute="value"] Memilih elemen yang memiliki atribut dengan nilai yang tepat.*/
+[type="button"] {
+    background-color: yellow;
+}
+
+/*[attribute~="value"]
+Memilih elemen yang memiliki atribut dengan daftar nilai spasi yang mengandung nilai tertentu.*/
+
+[class~="highlight"] {
+    background-color: lightgreen;
+}
+
+/*[attribute|="value"]
+Memilih elemen yang memiliki atribut dengan nilai yang dimulai dengan nilai tertentu diikuti oleh tanda hubung atau nilai yang tepat.
+*/
+[lang|="en"] {
+    font-style: italic;
+}
+
+/*[attribute$="value"]
+Memilih elemen yang atributnya diakhiri dengan nilai tertentu.
+ Memilih semua elemen dengan atribut "src" yang nilainya diakhiri dengan ".png" */
+[src$=".png"] {
+    border: 2px solid red;
+}
+
+/* [attribute*="value"]
+Memilih elemen yang atributnya mengandung nilai tertentu.*/
+/* Memilih semua elemen dengan atribut "title" yang mengandung kata "important" */
+[title*="important"] {
+    font-weight: bold;
+}
+
+
+[href^="https"] {
+            color: green;
+        }
+
+
+    </style>
+</head>
+<body>
+    <p class="red">Paragraf dengan teks berwarna merah</p>
+    <p class="skyblue-bg">Paragraf dengan background berwarna biru langit</p>
+    <p class="fancy">Paragraf dengan gaya fancy</p>
+
+    <p class="highlight bold">Ini adalah paragraf dengan highlight dan teks tebal.</p>
+ 
+    <p class="highlight italic">Ini adalah paragraf dengan highlight dan teks miring.</p>
+
+    <p>Paragraf yang menampilkan teks dengan warna standar tanpa menerapkan styling</p>
+
+    
+     <p title="This is a title">Paragraph with title</p>
+    <input type="button" value="Click Me">
+    <div class="highlight important">Highlighted and Important Div</div>
+    <p lang="en-US">This is an English paragraph</p>
+    <a href="https://www.example.com">Secure Link</a>
+    <img src="image.png" alt="Sample Image">
+    <span title="This is important">Important Span</span>
+
+
+</body>
+</html>
