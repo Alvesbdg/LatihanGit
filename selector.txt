@@ -1,5 +1,0 @@
-•	Type Selector
-•	Class Selector
-•	ID Selector
-•	Attribute Selector
-•	Universal Selector
