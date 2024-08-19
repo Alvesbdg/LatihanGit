@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head> 
+  <title>JavaScript  dalam HTML</title>
+  <script src="script.js"></script>    <!-- External JavaScript -->
+</head> 
+<body> 
+    <!-- Latihan 1: Menyertakan JavaScript ke dalam HTML -->
+
+    <h1 id="judul">Latihan JavaScript</h1>
+    <br>
+    <!-- Inline JavaScript -->
+    <input type="button" value="Klik Saya" onclick="alert('Hello World!')">  
+    <br>
+
+    <!-- Latihan 2: Variabel dan Tipe Data -->
+    <div id="output"></div>
+
+
+   <!-- Latihan 3: Pengendalian Alur (Control Flow) -->
+   <hr>
+   <div id="userInput">
+    <input type="number" name="txtnilai" id="txtnilai" value="">
+    <input type="button" value="Cek Nilai" onclick="ceknilai()">  
+   </div>   
+   <hr>
+
+   <!-- Latihan 4: Fungsi dalam JavaScript -->
+   <div> 
+    <input type="button" value="Hello Name" onclick="greet('John')">  
+    <input type="button" value="pangkat" onclick="displaySquares()">  
+    <button onclick="calculateAndDisplaySum()">Hitung total</button> 
+   </div> 
+   <hr>
+   <!-- Latihan 5: Manipulasi Array dan Objek -->
+   <div>  
+    <button onclick="displayStudents()">push-forEach</button>  
+    <button onclick="displayCarProperties()">loop-in loop</button> 
+    <button onclick="displayCars()">loop-forEach</button> 
+</div> 
+   <br>
+</body>
+</html>
+
+<!-- internal JavaScript -->
+<script>  
+      document.write("Selamat datang di latihan JavaScript"); 
+</script> 
